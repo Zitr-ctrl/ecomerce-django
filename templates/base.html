@@ -60,20 +60,18 @@
       $(document).ready(function () {
         // jQuery code
       });
+
+      setTimeout(function () {
+        $("#message").fadeOut("slow");
+      }, 4000);
+
       // jquery end
     </script>
   </head>
   <body>
-
     {% include 'includes/navbar.html' %}
 
     <!-- section-header.// -->
-    {% block content %} 
-
-    {% endblock %}
-
-    {% include 'includes/footer.html' %}
-    
-
-    
-
+    {% block content %} {% endblock %} {% include 'includes/footer.html' %}
+  </body>
+</html>
